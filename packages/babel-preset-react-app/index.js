@@ -36,6 +36,13 @@ const plugins = [
       regenerator: true,
     },
   ],
+  // Transforms decortators
+  [
+    require.resolve('babel-plugin-transform-decorators-legacy'),
+    {
+      useBuiltIns: true,
+    },
+  ],
 ];
 
 // This is similar to how `env` works in Babel:
